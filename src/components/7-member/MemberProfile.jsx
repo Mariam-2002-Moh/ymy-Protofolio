@@ -26,7 +26,7 @@ const [allProjects, setAllProjects] = useState([]);
   //   return <h1>Member Not Found</h1>;
   // }
   useEffect(() => {
-    fetch(`http://localhost:8000/api/users/${id}`)
+    fetch(`https://protofolioback-production.up.railway.app/api/users/${id}`)
       .then((res) => res.json())
       .then((data) => {
         if (data) {

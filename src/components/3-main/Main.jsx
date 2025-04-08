@@ -11,7 +11,7 @@ export default function Main() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch("http://localhost:8000/api/projects", {
+    fetch("https://protofolioback-production.up.railway.app/api/projects", {
       method: "GET",
       headers: { "Content-Type": "application/json" },
       mode: "cors",

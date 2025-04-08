@@ -13,7 +13,7 @@ export default function Group() {
   const [group, setGroup] = useState([]);
   const [error, setError] = useState(null);
   useEffect(() => {
-    fetch("http://localhost:8000/api/users", {
+    fetch("https://protofolioback-production.up.railway.app/api/users", {
       method: "GET",
       headers: { "Content-Type": "application/json" },
       mode: "cors",
